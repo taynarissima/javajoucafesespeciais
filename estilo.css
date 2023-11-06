@@ -16,6 +16,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: row;
+    background-color: var(--cor-coluna-direita);
 }
 
 .coluna {
@@ -39,16 +40,7 @@ body {
     padding-left: 20px;
     background-color: var(--cor-coluna-esquerda);
     border-right: 1px solid var(--cor-logo);
-}
-
-.coluna-direita h1 {
-    margin-bottom: 25px;
-}
-
-.coluna-direita {
-    flex-grow: 4;
-
-    background-color: var(--cor-coluna-direita);
+    
 }
 
 .coluna-esquerda ul {
@@ -76,8 +68,74 @@ body {
     background-color: var(--cor-coluna-esquerda);
     color:black;    
     font-weight: 600;
+    border-radius: 15px;
 }
 
 .coluna-esquerda a iconify-icon {
     margin-right: 10px;
+}
+
+header {
+    background-image: url("https://s3-alpha-sig.figma.com/img/b771/de82/2ad9e029faa6f5df119cd55ed0b42d96?Expires=1700438400&Signature=AMjcQk7p91ZPF33Xpj1pA4Ngm5uWIVPk9kG6xokoAufi~t7frXkBZ19M9LxDqG4PdpIMeGqlH~mdm2pSw~bTnZKqtAJ6XjqF4EIVBrrilBXcxrQYRlqmToXuuOcFhwvA2jaa4lxSGaQUSWjhbp3X6C8DMF5kRVFBmVQdMTjMHwILZzclzztjxStqzi~iexcW6PZTOHau1FsLiHv1dpRQhQTQNPMME8Djk3ktRz9IMNr3m6ZTSb23YJkndR0exeGt2nqVBv4yrLxs9qeLk1J-4kD0aoYYdSHrE0sB7nM3Yh9UmAr6YN5CtG~q3GZpGEi~VEhIvXuy7fFkyYESbY3bqg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+}
+
+.coluna .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 70%;
+}
+
+.coluna .container .botao-1 {
+    background-color: #B89355;
+    border-radius: 15px;
+    display: inline;
+    width: fit-content;
+}
+
+.coluna .container .botao-1 a {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.coluna .container .botao-1 a:hover {   
+    background-color: var(--cor-coluna-direita);
+    color:black;    
+    font-weight: 600;
+}
+
+.coluna-direita h1 {
+    margin-bottom: 25px;
+}
+
+.coluna-direita p {
+    margin-bottom: 25px;
+}
+
+.coluna-direita {
+    flex-grow: 4;
+}
+
+.background-1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    top: -5vw;
+    bottom: 0;
+    right: 0;
+}
+
+.background-2 {
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
 }
